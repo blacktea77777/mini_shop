@@ -138,7 +138,7 @@ function list_bill($user_sn = "")
     $user_sn  = $isAdmin ? $user_sn : $_SESSION['user_sn'];
     $sql      = "SELECT * FROM `bill` WHERE `user_sn`='{$user_sn}' order by `bill_date` desc";
     $result   = $mysqli->query($sql) or die($mysqli->connect_error);
-    $bill_arr = "";
+    //$bill_arr = "";
     while ($all = $result->fetch_assoc()) {
         $bill_arr[] = $all;
     }
