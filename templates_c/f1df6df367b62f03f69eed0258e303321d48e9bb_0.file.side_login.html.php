@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-11-03 07:49:13
+/* Smarty version 3.1.29, created on 2020-11-10 05:47:02
   from "C:\UniServerZ\www\mini_shop\templates\side_login.html" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5fa10b79954298_85870833',
+  'unifunc' => 'content_5faa2956c37700_39913220',
   'file_dependency' => 
   array (
     'f1df6df367b62f03f69eed0258e303321d48e9bb' => 
     array (
       0 => 'C:\\UniServerZ\\www\\mini_shop\\templates\\side_login.html',
-      1 => 1604389683,
+      1 => 1604987215,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5fa10b79954298_85870833 ($_smarty_tpl) {
+function content_5faa2956c37700_39913220 ($_smarty_tpl) {
 ?>
 <form action="user.php" method="post" role="form" class="form-horizontal">
   <div class="form-group">
@@ -42,7 +42,7 @@ function content_5fa10b79954298_85870833 ($_smarty_tpl) {
     </label>
     <div class="col-md-8">
       <input type="hidden" name="op" value="user_login">
-      <button type="submit" name="button" class="btn btn-primary btn-block">登入</button>
+      <button type="submit" name="button" class="btn btn-info">登入</button>
     </div>
   </div>
 </form><?php }
