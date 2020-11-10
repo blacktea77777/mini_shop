@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-11-10 05:42:38
+/* Smarty version 3.1.29, created on 2020-11-10 06:12:40
   from "C:\UniServerZ\www\mini_shop\templates\index.html" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5faa284e96ebd0_64113624',
+  'unifunc' => 'content_5faa2f58ed6dd3_09252176',
   'file_dependency' => 
   array (
     '0f462a56d1a4529add89f41e20d9005077738b13' => 
     array (
       0 => 'C:\\UniServerZ\\www\\mini_shop\\templates\\index.html',
-      1 => 1604986954,
+      1 => 1604988737,
       2 => 'file',
     ),
   ),
@@ -28,7 +28,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:index_side.html' => 1,
   ),
 ),false)) {
-function content_5faa284e96ebd0_64113624 ($_smarty_tpl) {
+function content_5faa2f58ed6dd3_09252176 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="zh-Hant">
@@ -39,6 +39,9 @@ function content_5faa284e96ebd0_64113624 ($_smarty_tpl) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <?php echo '<script'; ?>
+ src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"><?php echo '</script'; ?>
+>
     <link rel="stylesheet" href="style.css">
     <!--[if lt IE 9]>
       <?php echo '<script'; ?>

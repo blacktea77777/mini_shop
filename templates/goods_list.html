@@ -5,8 +5,22 @@
         <a href="index.php?goods_sn={$goods.goods_sn}"><img src="{$goods.pic}" alt="{$goods.goods_title}"></a>
         <div class="caption">
           <div style="height: 60px;">
-            <h3><a href="index.php?goods_sn={$goods.goods_sn}">{$goods.goods_title}</a></h3>
+            <h3><a href="index.php?goods_sn={$goods.goods_sn}">{$goods.goods_title}</a><button id="focus" style="btn btn-info;position: absolute;right:30px" style="background-color:#d1d1e0">未關注</button></h3>  
           </div>
+          <script>
+              $(document).ready(function () {
+                $("#focus").click(function (){
+                    if( this.innerHTML == "未關注") {
+                       document.getElementById('focus').innerHTML="關注"
+                       $("#focus").css("background-color","#ff6666");
+                    }
+                    else{
+                      document.getElementById('focus').innerHTML="未關注";
+                      $("#focus").css("background-color","#d1d1e0");
+                    }
+                });
+                });
+          </script>
           <div class="row">
             <div class="col-md-6">售價：{$goods.goods_price}</div>
             <div class="col-md-6">人氣：{$goods.goods_counter}</div>

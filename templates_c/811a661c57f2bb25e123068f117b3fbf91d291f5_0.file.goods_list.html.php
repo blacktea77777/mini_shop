@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-11-03 07:48:33
+/* Smarty version 3.1.29, created on 2020-11-10 07:12:55
   from "C:\UniServerZ\www\mini_shop\templates\goods_list.html" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5fa10b51a884b9_31652045',
+  'unifunc' => 'content_5faa3d775fc892_74489351',
   'file_dependency' => 
   array (
     '811a661c57f2bb25e123068f117b3fbf91d291f5' => 
     array (
       0 => 'C:\\UniServerZ\\www\\mini_shop\\templates\\goods_list.html',
-      1 => 1604389683,
+      1 => 1604992366,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5fa10b51a884b9_31652045 ($_smarty_tpl) {
+function content_5faa3d775fc892_74489351 ($_smarty_tpl) {
 ?>
 <div class="row">
   <?php
@@ -44,8 +44,24 @@ $__foreach_goods_0_saved_local_item = $_smarty_tpl->tpl_vars['goods'];
           <div style="height: 60px;">
             <h3><a href="index.php?goods_sn=<?php echo $_smarty_tpl->tpl_vars['goods']->value['goods_sn'];?>
 "><?php echo $_smarty_tpl->tpl_vars['goods']->value['goods_title'];?>
-</a></h3>
+</a><button id="focus" style="btn btn-info;position: absolute;right:30px" style="background-color='#d1d1e0'">未關注</button></h3>  
           </div>
+          <?php echo '<script'; ?>
+>
+              $(document).ready(function () {
+                $("#focus").click(function (){
+                    if( this.innerHTML == "未關注") {
+                       document.getElementById('focus').innerHTML="關注"
+                       $("#focus").css("background-color","#ff6666");
+                    }
+                    else{
+                      document.getElementById('focus').innerHTML="未關注";
+                      $("#focus").css("background-color","#d1d1e0");
+                    }
+                });
+                });
+          <?php echo '</script'; ?>
+>
           <div class="row">
             <div class="col-md-6">售價：<?php echo $_smarty_tpl->tpl_vars['goods']->value['goods_price'];?>
 </div>
