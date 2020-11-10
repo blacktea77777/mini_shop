@@ -85,3 +85,13 @@ function add_to_cart($goods_sn = '', $goods_title = '')
     setcookie("cart[$goods_sn][goods_amount]", 1, $end_time);
     setcookie("cart[$goods_sn][goods_title]", $goods_title, $end_time);
 }
+//加入評論
+function add_to_comment($up = '')
+{
+    if (empty($up)) {
+        return;
+    }
+    $end_time = time() + 365 * 86400;
+    setcookie("cart[$goods_sn][goods_amount]", 1, $end_time);
+    setcookie("cart[$goods_sn][goods_title]", $goods_title, $end_time);
+}

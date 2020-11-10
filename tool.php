@@ -72,7 +72,11 @@ function insert_goods()
     save_goods_pic($goods_sn);
     return $goods_sn;
 }
-
+//儲存評論
+function insert_comment()
+{
+    global $mysqli;
+}
 //儲存圖片
 function save_goods_pic($goods_sn = "")
 {
